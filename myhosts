@@ -1,0 +1,9 @@
+[master]
+#172.31.5.0 ansible_ssh_user=$SSH_USER ansible_ssh_private_key_file=$SSH_PRIVATE_KEY
+[slaves]
+#172.31.5.0
+172.31.8.223
+
+[slaves:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=/home/ubuntu/kafka.pem
